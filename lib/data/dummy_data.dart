@@ -1,67 +1,69 @@
+// ignore_for_file: unnecessary_const
+
 import 'package:flutter/material.dart';
 import 'package:meals/models/category.dart';
 import 'package:meals/models/meal.dart';
 
-const DUMMY_CATEGORIES = const [
-  Category(
+const dummyCategories = [
+  const Category(
     id: 'c1',
     title: 'Italiano',
     color: Colors.purple,
   ),
-  Category(
+  const Category(
     id: 'c2',
     title: 'Rápido & Fácil',
     color: Colors.red,
   ),
-  Category(
+  const Category(
     id: 'c3',
     title: 'Hamburgers',
     color: Colors.orange,
   ),
-  Category(
+  const Category(
     id: 'c4',
     title: 'Alemã',
     color: Colors.amber,
   ),
-  Category(
+  const Category(
     id: 'c5',
     title: 'Leve & Saudável',
     color: Colors.indigo,
   ),
-  Category(
+  const Category(
     id: 'c6',
     title: 'Exótica',
     color: Colors.green,
   ),
-  Category(
+  const Category(
     id: 'c7',
     title: 'Café da Manhã',
     color: Colors.lightBlue,
   ),
-  Category(
+  const Category(
     id: 'c8',
     title: 'Asiática',
     color: Colors.lightGreen,
   ),
-  Category(
+  const Category(
     id: 'c9',
     title: 'Francesa',
     color: Colors.pink,
   ),
-  Category(
+  const Category(
     id: 'c10',
     title: 'Verão',
     color: Colors.teal,
   ),
 ];
 
-const DUMMY_MEALS = const [
+const dummyMeals = const [
   Meal(
     id: 'm1',
     categories: ['c1', 'c2'],
     title: 'Spaghetti with Tomato Sauce',
-    cost: Cost.Cheap,
-    complexity: Complexity.Simple,
+    cost: Cost.cheap,
+    complexity: Complexity.simple,
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
     duration: 20,
@@ -91,8 +93,8 @@ const DUMMY_MEALS = const [
     id: 'm2',
     categories: ['c2'],
     title: 'Toast Hawaii',
-    cost: Cost.Cheap,
-    complexity: Complexity.Simple,
+    cost: Cost.cheap,
+    complexity: Complexity.simple,
     imageUrl:
         'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
     duration: 10,
@@ -117,8 +119,8 @@ const DUMMY_MEALS = const [
     id: 'm3',
     categories: ['c2', 'c3'],
     title: 'Classic Hamburger',
-    cost: Cost.Fair,
-    complexity: Complexity.Simple,
+    cost: Cost.fair,
+    complexity: Complexity.simple,
     imageUrl:
         'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
     duration: 45,
@@ -146,8 +148,8 @@ const DUMMY_MEALS = const [
     id: 'm4',
     categories: ['c4'],
     title: 'Wiener Schnitzel',
-    cost: Cost.Expensive,
-    complexity: Complexity.Medium,
+    cost: Cost.expensive,
+    complexity: Complexity.medium,
     imageUrl:
         'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
     duration: 60,
@@ -179,8 +181,8 @@ const DUMMY_MEALS = const [
     id: 'm5',
     categories: ['c2', 'c5', 'c10'],
     title: 'Salad with Smoked Salmon',
-    cost: Cost.Expensive,
-    complexity: Complexity.Simple,
+    cost: Cost.expensive,
+    complexity: Complexity.simple,
     imageUrl:
         'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
     duration: 15,
@@ -211,8 +213,8 @@ const DUMMY_MEALS = const [
     id: 'm6',
     categories: ['c6', 'c10'],
     title: 'Delicious Orange Mousse',
-    cost: Cost.Cheap,
-    complexity: Complexity.Difficult,
+    cost: Cost.cheap,
+    complexity: Complexity.difficult,
     imageUrl:
         'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
     duration: 240,
@@ -244,8 +246,8 @@ const DUMMY_MEALS = const [
     id: 'm7',
     categories: ['c7'],
     title: 'Pancakes',
-    cost: Cost.Cheap,
-    complexity: Complexity.Simple,
+    cost: Cost.cheap,
+    complexity: Complexity.simple,
     imageUrl:
         'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
     duration: 20,
@@ -273,8 +275,8 @@ const DUMMY_MEALS = const [
     id: 'm8',
     categories: ['c8'],
     title: 'Creamy Indian Chicken Curry',
-    cost: Cost.Fair,
-    complexity: Complexity.Medium,
+    cost: Cost.fair,
+    complexity: Complexity.medium,
     imageUrl:
         'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
     duration: 35,
@@ -304,8 +306,8 @@ const DUMMY_MEALS = const [
     id: 'm9',
     categories: ['c9'],
     title: 'Chocolate Souffle',
-    cost: Cost.Cheap,
-    complexity: Complexity.Difficult,
+    cost: Cost.cheap,
+    complexity: Complexity.difficult,
     imageUrl:
         'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
     duration: 45,
@@ -351,8 +353,8 @@ const DUMMY_MEALS = const [
     id: 'm10',
     categories: ['c2', 'c5', 'c10'],
     title: 'Asparagus Salad with Cherry Tomatoes',
-    cost: Cost.Expensive,
-    complexity: Complexity.Simple,
+    cost: Cost.expensive,
+    complexity: Complexity.simple,
     imageUrl:
         'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
     duration: 30,

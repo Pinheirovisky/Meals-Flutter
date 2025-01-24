@@ -9,4 +9,6 @@ O projeto foi desenvolvido ao longo do curso [Aprenda Flutter e Desenvolva Apps 
 
 ### Demo
 
-![demo](./assets/imgs/demo.png)
+|                                 |                                    |
+| :-----------------------------: | :--------------------------------: |
+| ![demo](./assets/imgs/demo.png) | ![demo-2](./assets/imgs/demo2.png) |
